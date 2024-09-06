@@ -1,0 +1,355 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6BE1F6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #000000;
+    color: #6BE1F6;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+/* Estilos de Seção */
+section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os Diretores no Topo */
+.diretor-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os Diretores no Meio */
+.diretor-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Estilos de Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Remover o grid layout dos diretores */
+.diretores-grid {
+    display: flex; /* Pode ser removido ou ignorado */
+    flex-wrap: wrap;
+}
+
+/* Estilos Gerais */
+.diretor-par {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Adiciona uma largura mínima para as caixinhas */
+.diretor-par .integrante-card {
+    min-width: 315px;
+}
+
+/* Se não houver vice-diretor, deve estar em linha própria */
+.diretor-single {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Container dos Diretores */
+.integrantes-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adiciona uma largura mínima para as caixinhas */
+
+
+/* Estilo das Caixinhas dos Integrantes */
+.integrante-card {
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 320px;
+    text-align: left;
+    min-width: 700px;
+    
+}
+
+/* Estilo da Imagem */
+.integrante-card .foto {
+    margin-right: 20px;
+    width: 80px; /* Largura do espaço para a foto */
+    height: 80px; /* Altura do espaço para a foto */
+    border-radius: 50%; /* Forma arredondada */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner arredondado */
+    background-color: #bdc3c7; /* Cor de fundo para quando a imagem não carregar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrante-card .foto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo das Informações */
+.integrante-card .info h4 {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+}
+
+.integrante-card .info p {
+    margin: 5px 0 0;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Estilos para a seção de Propostas */
+#propostas {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#propostas h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.propostas-list {
+    list-style: none;
+    padding: 0;
+}
+
+.propostas-list li {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px 0;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Ajuste do Dropdown para "Propostas" */
+nav ul li.dropdown > a::after {
+    content: '▼';
+    font-size: 14px;
+    color: white;
+    padding-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo do Título "Contato" */
+#contato-title {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px; /* Espaço entre o título e o botão */
+}
+
+/* Estilo do Botão "Fale Conosco" */
+.contact-button {
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    font-size: 18px; /* Ajusta o tamanho do texto */
+    color: #000000; /* Cor do texto */
+    background-color: #6BE1F6; /* Cor de fundo */
+    border: none; /* Remove as bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado de links */
+    text-align: center; /* Centraliza o texto no botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Animação de hover */
+}
+
+.contact-button:hover {
+    background-color: #6BE1F6; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve crescimento ao passar o mouse */
+}
+
+.contact-button:active {
+    background-color: #6BE1F6; /* Cor quando o botão é clicado */
+}
+
+/* Centraliza o botão na página */
+.button-container {
+    text-align: center; /* Centraliza o botão */
+}
+
+/* Estilos de Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integrante-card {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .integrante-card .foto {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .diretores-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 100px;
+    }
+
+    .integrante-card {
+        max-width: 100%;
+    }
+}
+/* Ajuste do Dropdown para "Propostas" */
+nav ul li.dropdown > a::after {
+    content: '▼';
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6BE1F6;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #6BE1F6;
+}
+
+.dropdown-content a:hover {
+    background-color: #58b6c7;
+}
+
+
+
+/* Ajustes do Footer */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Adiciona uma linha azul abaixo dos subtítulos */
+.subtitle-line {
+    border-bottom: 5px solid #6BE1F6; /* Ajuste a cor e a espessura conforme necessário */
+    display: inline; /* Isso mantém a linha apenas abaixo do texto */
+    padding-bottom: 5px; /* Espaçamento entre o texto e a linha */
+}
+
+.hero-image {
+    position: relative;
+    height: 100vh; /* 100% da altura da viewport */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir o espaço da tela sem distorcer a imagem */
+  }
+  

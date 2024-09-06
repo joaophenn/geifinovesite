@@ -259,43 +259,6 @@ nav ul li.dropdown > a::after {
     text-align: center; /* Centraliza o botão */
 }
 
-/* Estilos de Media Queries */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .integrante-card {
-        flex-direction: column;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .integrante-card .foto {
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    .diretores-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        max-width: 100px;
-    }
-
-    .integrante-card {
-        max-width: 100%;
-    }
-}
 /* Ajuste do Dropdown para "Propostas" */
 nav ul li.dropdown > a::after {
     content: '▼';

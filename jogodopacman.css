@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+#game {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    background-size: cover;
+}
+.pacman {
+    background-image: url('imagens.jogodopacman/pacman.png');
+}
+.ghost {
+    background-image: url('imagens.jogodopacman/fantasma1.png');
+}
+.fast-ghost {
+    background-image: url('imagens.jogodopacman/fantasma2.png');
+}
+.chasing-ghost {
+    background-image: url('imagens.jogodopacman/fantasma3.png');
+}
+.obstacle {
+    background-image: url('imagens.jogodopacman/logoinove.PNG');
+}
+.coin {
+    background-image: url('imagens.jogodopacman/moeda.png');
+}
+.exit {
+    background-image: url('imagens.jogodopacman/saida.png');
+}
+#phase, #startScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;  /* Cor do texto */
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#startScreen button,
+#exitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #6BE1F6;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startScreen button:hover,
+#exitButton:hover {
+    background-color: #6BE1F6;
+}
+
+.key-instructions {
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6BE1F6;
+}
+
+canvas {
+    border: 2px solid #6BE1F6;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.score {
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilo para a mensagem de perda */
+#loseMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1000; /* Garante que a mensagem fique acima de outros elementos */
+}

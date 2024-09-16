@@ -22,25 +22,25 @@ body {
     background-size: cover;
 }
 .pacman {
-    background-image: url('imagens.jogodopacman/pacman.png');
+    background-image: url('pacman.png');
 }
 .ghost {
-    background-image: url('imagens.jogodopacman/fantasma1.png');
+    background-image: url('fantasma1.png');
 }
 .fast-ghost {
-    background-image: url('imagens.jogodopacman/fantasma2.png');
+    background-image: url('fantasma2.png');
 }
 .chasing-ghost {
-    background-image: url('imagens.jogodopacman/fantasma3.png');
+    background-image: url('fantasma3.png');
 }
 .obstacle {
-    background-image: url('imagens.jogodopacman/logoinove.PNG');
+    background-image: url('logoinove.PNG');
 }
 .coin {
-    background-image: url('imagens.jogodopacman/moeda.png');
+    background-image: url('moeda.png');
 }
 .exit {
-    background-image: url('imagens.jogodopacman/saida.png');
+    background-image: url('saida.png');
 }
 #phase, #startScreen {
     display: none;

@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 // Carregar imagem de fundo
 const backgroundImage = new Image();
-backgroundImage.src = 'imagens.jogocobrinha/IMG_6811.PNG';  // Substitua com o caminho correto para a imagem de fundo
+backgroundImage.src = 'IMG_6811.PNG';  // Substitua com o caminho correto para a imagem de fundo
 
 
 // Ajuste do canvas para ser responsivo
@@ -27,13 +27,13 @@ let lastRenderTime = 0;
 
 // Carregar imagens da cobra, corpo e maçã
 const snakeHeadImage = new Image();
-snakeHeadImage.src = 'imagens.jogocobrinha/cabeçacobra.png';  // Cabeça da cobra
+snakeHeadImage.src = 'cabeçacobra.png';  // Cabeça da cobra
 
 const snakeBodyImage = new Image();
-snakeBodyImage.src = 'imagens.jogocobrinha/corpocobra.png';  // Corpo da cobra
+snakeBodyImage.src = 'corpocobra.png';  // Corpo da cobra
 
 const foodImage = new Image();
-foodImage.src = 'imagens.jogocobrinha/maçã.png';  // Maçã
+foodImage.src = 'maçã.png';  // Maçã
 
 // Elemento de mensagem de perda
 const loseMessageElement = document.getElementById('loseMessage');
